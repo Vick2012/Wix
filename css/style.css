@@ -1,0 +1,112 @@
+/* Reset general para quitar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    background-image: url("../img/wix.png"); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; /* La imagen se centra */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #f4b400, #ffcc00);
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espacio entre la imagen y el título */
+}
+
+header img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre la imagen */
+    transition: transform 0.5s ease-in-out; /* Agrega un efecto suave */
+}
+
+header img:hover {
+    transform: scale(1.8); /* Hace que la imagen crezca un poco al pasar el mouse */
+}
+
+/* Contenedor principal de las tarjetas */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px; /* Espaciado uniforme entre tarjetas */
+}
+
+/* Diseño de cada tarjeta */
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    padding: 20px;
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.card:hover {
+    transform: scale(1.08); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Mayor sombra */
+}
+
+/* Estilos para títulos dentro de las tarjetas */
+.card h2 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Lista dentro de las tarjetas */
+ul {
+    list-style: none; /* Quita los estilos de lista */
+    padding: 0;
+}
+
+ul li {
+    background: linear-gradient(to right, #ffcc00, #f4b400); /* Gradiente */
+    color: white;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+/* Efecto al pasar el mouse sobre los elementos de la lista */
+ul li:hover {
+    transform: translateX(8px); /* Desplazamiento sutil hacia la derecha */
+}
+
+/* Estilos para la imagen del logo */
+.logo {
+    width: 200px; /* Ajusta el tamaño */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 15px; /* Espacio entre la imagen y el título */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Agrega una animación */
+}
+
+/* Efecto hover: agranda la imagen y agrega un brillo */
+.logo:hover {
+    transform: scale(1.6); /* Aumenta el tamaño del logo al pasar el mouse */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* Agrega un brillo blanco */
+}
